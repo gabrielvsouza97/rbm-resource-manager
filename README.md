@@ -4,18 +4,18 @@ Para o projeto precisaremos de:
 
 ## Designado
 
-Labels -> Eduardo,
-Inputs: email, password -> Alessandra ,
-Botoes -> Davi,
-links -> Victor ,
-P, h's -> Gabriel ,
-logo -> Bruno,
+Labels -> Eduardo,<br/>
+Inputs: email, password -> Alessandra ,<br/>
+Botoes -> Davi,<br/>
+links -> Victor ,<br/>
+P, h's -> Gabriel ,<br/>
+logo -> Bruno,<br/>
 
 ## To-do
 
-checkbox (salvar senha, se possivel colocar direto no arquivo login) ,
-toasts
-div
+checkbox (salvar senha, se possivel colocar direto no arquivo login) ,<br/>
+toasts<br/>
+div<br/>
 
 //Bruno
 
