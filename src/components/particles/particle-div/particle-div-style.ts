@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const StyledDiv2 = styled.div `
-    background-color: green;
-    width: 100%;
+    background-color: #FFFFFF;
+    width: 100vw;
     height: 76px;
 
 `;
