@@ -5,7 +5,7 @@ export type PropsText = {
   fontWeight?: string;
   colorText?: string;
   fontSize?: string;
-  inputType?:  "radio"|"text";
+  inputType?:  "checkbox"|"text";
 };
 
 export default function ParticleLabel(props: PropsText) {
