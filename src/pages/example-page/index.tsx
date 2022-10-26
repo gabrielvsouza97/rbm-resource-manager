@@ -6,7 +6,6 @@ export default function ExamplePage() {
   return (
     <div>
       <ExampleAtom />
-      <Input></Input>
     </div>
   );
 }
