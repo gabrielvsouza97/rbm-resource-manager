@@ -5,7 +5,7 @@ export default function TesteEduardo() {
     <>
       <ParticleText tagType="h1" fontWeight="700" fontSize="64">
         Página Eduardo
-      <ToastButton>xxxx</ToastButton>
+        <ToastButton>xxxx</ToastButton>
       </ParticleText>
     </>
   );
