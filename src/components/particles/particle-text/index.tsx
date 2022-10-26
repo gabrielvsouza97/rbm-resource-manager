@@ -1,6 +1,6 @@
 import { SpanInit } from "./particle-text-style";
 export type PropsText = {
-  tagType: "h1" | "h2" | "h3" | "p" | "span";
+  tagType: "h1" | "h2" | "h3" | "p" | "span" | "li";
   idName?: string;
   children?: React.ReactNode;
   fontWeight?: string;
