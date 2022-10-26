@@ -1,4 +1,4 @@
-import { SpanInit } from "./particles-text-style";
+import { SpanInit } from "./particle-text-style";
 export type PropsText = {
   tagType: "h1" | "h2" | "h3" | "p" | "span";
   idName?: string;
@@ -10,7 +10,7 @@ export type PropsText = {
   fontSize?: string;
 };
 
-export default function ComponentText(props: PropsText) {
+export default function ParticleText(props: PropsText) {
   return (
     <SpanInit
       as={props.tagType}
