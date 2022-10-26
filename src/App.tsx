@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={<ExamplePage />} />
         </Routes>
       </BrowserRouter>
-    </ThemeContext> //teste
+    </ThemeContext> 
   );
 }
 
