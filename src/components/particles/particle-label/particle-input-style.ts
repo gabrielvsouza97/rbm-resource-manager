@@ -6,7 +6,7 @@ type StylesLabelComponent = {
   fontSize?: string;
   lineHeight?: string;
   textAlign?: string;
-  type?: "radio"|"text";
+  type?: "checkbox"|"text";
 };
 
 export const Label = styled.label<StylesLabelComponent>`
