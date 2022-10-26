@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { THEME } from "contants";
+import { THEME } from "../../constants";
 import { ThemeProvider } from "styled-components";
 
 type ThemeContextProps = {
