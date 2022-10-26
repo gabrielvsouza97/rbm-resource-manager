@@ -1,10 +1,10 @@
-import ParticleLabel from "components/particles/particle-label"
-import Input from "components/molecules/molecules-input"
-import {THEME} from "../../../constants"
-export default function TesteEduardo () {
-    return (
-        <>
-      <ParticleLabel text="lol"><Input/></ParticleLabel>
-        </>
-    )
+import ParticleText from "components/particles/particle-text";
+export default function TesteEduardo() {
+  return (
+    <>
+      <ParticleText tagType="h1" fontWeight="700" fontSize="64">
+        Página Eduardo
+      </ParticleText>
+    </>
+  );
 }
