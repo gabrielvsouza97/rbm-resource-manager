@@ -1,25 +1,20 @@
+import { THEME } from "../../../constants";
 import { SpanInit } from "./particle-text-style";
 export type PropsText = {
-  tagType: "h1" | "h2" | "h3" | "p" | "span";
+  tagType: "h1" | "h2" | "h3" | "p" | "span" | "li" | "label";
   idName?: string;
+  for?: string;
   children?: React.ReactNode;
   fontWeight?: string;
   alignText?: string;
-  colorText?: string;
+  colorText?: keyof typeof THEME.light.colors;
   lineHeight?: string;
   fontSize?: string;
 };
 
 export default function ParticleText(props: PropsText) {
   return (
-    <SpanInit
-      as={props.tagType}
-      colorText={props.colorText}
-      fontSize={props.fontSize}
-      fontWeight={props.fontWeight}
-      lineHeight={props.lineHeight}
-      textAlign={props.alignText}
-    >
+    <SpanInit as={props.tagType} {...props}>
       {props.children}
     </SpanInit>
   );
