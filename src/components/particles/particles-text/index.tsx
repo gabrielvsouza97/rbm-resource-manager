@@ -1,16 +1,25 @@
 import { SpanInit } from "./particles-text-style";
-type PropsText = {
+export type PropsText = {
   tagType: "h1" | "h2" | "h3" | "p" | "span";
   idName?: string;
-  wheigthText?: string;
-  alignText?: string;
   children?: React.ReactNode;
-  colorText: string;
+  fontWeight?: string;
+  alignText?: string;
+  colorText?: string;
+  lineHeight?: string;
+  fontSize?: string;
 };
 
 export default function ComponentText(props: PropsText) {
   return (
-    <SpanInit as={props.tagType} colorText={props.colorText}>
+    <SpanInit
+      as={props.tagType}
+      colorText={props.colorText}
+      fontSize={props.fontSize}
+      fontWeight={props.fontWeight}
+      lineHeight={props.lineHeight}
+      textAlign={props.alignText}
+    >
       {props.children}
     </SpanInit>
   );
