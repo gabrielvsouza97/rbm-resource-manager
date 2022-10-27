@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+type StylesInputComponents = {
+  type: "text" | "password",
+};
+
 export const StyledInput = styled.input`
   color: #ced4da;
   height: 54px;
@@ -7,7 +11,7 @@ export const StyledInput = styled.input`
   background: #ffffff;
   border: 1px solid #ced4da;
   border-radius: 6px;
-  :focus{
+  &:focus{
     border-color: #0092D4;
   }
 `;
