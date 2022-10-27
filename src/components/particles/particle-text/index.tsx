@@ -6,7 +6,7 @@ export type PropsText = {
   for?: string;
   children?: React.ReactNode;
   fontWeight?: string;
-  alignText?: string;
+  textAlign?: string;
   colorText?: keyof typeof THEME.light.colors;
   lineHeight?: string;
   fontSize?: string;
