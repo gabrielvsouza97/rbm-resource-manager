@@ -6,7 +6,7 @@ type StylesInputComponents = {
   placeholder?: string,
 };
 
-export default function InputText(props: StylesInputComponents){
+export default function Input(props: StylesInputComponents){
   return(
     <Styled.StyledInput placeholder={props.placeholder} type={props.type}>
     </Styled.StyledInput>
