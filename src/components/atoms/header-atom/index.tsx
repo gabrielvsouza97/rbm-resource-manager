@@ -1,11 +1,11 @@
-import * as Styled from "./header-atom-style"
-import logo from "../../../assets/img/logo.svg"
-export default function AtomHeader(){
-    return (
-        <Styled.StyledHeader>
-            <Styled.StyledDiv>
-                <img src={logo} alt="Texto alternativo" width="112px" />
-            </Styled.StyledDiv>
-        </Styled.StyledHeader>
-    )
+import * as Styled from "./header-atom-style";
+import ParticleLogo from "components/particles/particle-logo";
+export default function AtomHeader() {
+  return (
+    <Styled.StyledHeader>
+      <Styled.StyledDiv>
+        <ParticleLogo />
+      </Styled.StyledDiv>
+    </Styled.StyledHeader>
+  );
 }
