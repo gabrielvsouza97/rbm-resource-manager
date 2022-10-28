@@ -1,5 +1,4 @@
-import ParticleText from "components/particles/particle-text";
-import { ToastButton } from "components/particles/particle-toast-button/particle-toast-button-style";
+import ParticleToast from "components/particles/particle-toast";
 export default function TesteEduardo() {
   return (
     <>
