@@ -10,6 +10,7 @@ export type PropsText = {
   colorText?: keyof typeof THEME.light.colors;
   lineHeight?: string;
   fontSize?: string;
+  padding?: string;
 };
 
 export default function ParticleText(props: PropsText) {
