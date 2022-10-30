@@ -1,4 +1,4 @@
-import { THEME } from "contants";
+import { THEME } from "../constants";
 import { useState } from "react";
 
 export default function useTheme() {
