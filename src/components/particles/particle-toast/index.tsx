@@ -1,16 +1,22 @@
-import {Imagem, ToastWrapper} from "./particle-toast-style"
+import {CloseButton, Icon, Text, TextIconWrapper, ToastWrapper} from "./particle-toast-style"
 
 type ToastType = {
     onClick?: Function;
-    variant?: "alert"|"check"|"info"|"notification"|"stop";
+    variant: "alert"|"check"|"info"|"bell"|"stop";
+    text?: string;
 }
 
 
 export default function ParticleToast(props: ToastType){
     return (
         <>
+        
         <ToastWrapper variant={props.variant}>
-            <Imagem src={`../../../../src/assets/img/toast-img/check.svg`}></Imagem>TESTE
+            <TextIconWrapper>
+            <Icon src={`/../../../../src/assets/img/toast-img/icon/${props.variant}.svg`}/>
+            <Text>{props.text}</Text>
+        </TextIconWrapper>
+            <CloseButton src={`/../../../../src/assets/img/toast-img/button/${props.variant}.svg`}/>
         </ToastWrapper>        
         </>
     )
