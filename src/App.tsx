@@ -2,20 +2,26 @@ import "./App.css";
 
 import { Route, Routes } from "react-router";
 
-import { BrowserRouter } from "react-router-dom";
+import AuthContextProvider from "contexts/auth-context";
 import ExamplePage from "pages/example-page";
+import ExamplePage2 from "pages/example-page-2";
+import ProtectedRoute from "hocs/protected-route";
 import ThemeContext from "contexts/theme-context";
 import useTheme from "hooks/useTheme";
 
 function App() {
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
+
   return (
     <ThemeContext theme={theme}>
-      <BrowserRouter>
+      <AuthContextProvider>
         <Routes>
           <Route path="/" element={<ExamplePage />} />
+          <Route element={<ProtectedRoute />}>
+            <Route index path="/dashboard" element={<ExamplePage2 />} />
+          </Route>
         </Routes>
-      </BrowserRouter>
+      </AuthContextProvider>
     </ThemeContext>
   );
 }
