@@ -2,10 +2,11 @@ import ParticleToast from "components/particles/particle-toast";
 export default function TesteEduardo() {
   return (
     <>
-      <ParticleText tagType="h1" fontWeight="700" fontSize="64">
-        Página Eduardo
-      <ToastButton>xxxx</ToastButton>
-      </ParticleText>
+        <ParticleToast variant="alert" text="exemplo alert"/>
+        <ParticleToast variant="stop" text="exemplo stop"/>
+        <ParticleToast variant="check" text="exemplo check"/>
+        <ParticleToast variant="info" text="exemplo info"/>
+        <ParticleToast variant="bell" text="exemplo bell"/>
     </>
   );
 }
