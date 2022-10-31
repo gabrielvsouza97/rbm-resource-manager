@@ -2,7 +2,7 @@ import * as Styled from "./particle-logo-style";
 import logo from "../../../assets/img/logo.svg";
 
 export type LogoProps = {
-  largura?: string;
+  width?: string;
   altura?: string;
 };
 export default function ParticleLogo(props: LogoProps) {
@@ -11,7 +11,7 @@ export default function ParticleLogo(props: LogoProps) {
       src={logo}
       alt="Imagem com a logo da RBMWEB by Dimensa"
       title="RBMWEB by Dimensa"
-      largura={props.largura}
+      width={props.width}
       altura={props.altura}
     />
   );

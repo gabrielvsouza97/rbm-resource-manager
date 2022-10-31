@@ -10,6 +10,7 @@ declare module "styled-components" {
       secondary1: string;
       secondary2: string;
       secondary3: string;
+      secondary4: string;
     };
   }
 }

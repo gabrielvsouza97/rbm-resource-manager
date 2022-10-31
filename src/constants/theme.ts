@@ -7,6 +7,7 @@ export const THEME = {
       secondary1: "#DCDCDC",
       secondary2: "#909194",
       secondary3: "#262424",
+      secondary4: "#FFFFFF",
     },
   },
   dark: {
@@ -17,6 +18,7 @@ export const THEME = {
       secondary1: "#DCDCDC",
       secondary2: "#909194",
       secondary3: "#262424",
+      secondary4: "#FFFFFF",
     },
   },
 };
