@@ -1,15 +1,9 @@
+import { THEME } from "../../../constants";
 import styled from "styled-components";
 type DivColorsProps = {
-  labelColor?: string;
+  labelColor?: keyof typeof THEME.light.colors;
   underlineColor?: string;
 };
-
-export const StyledDivMain = styled.div`
-  width: 411px;
-  height: 577px;
-  background-color: #ffffff;
-  padding: 42px 32px;
-`;
 
 export const StyledDivHeader = styled.div`
   display: flex;
@@ -17,7 +11,6 @@ export const StyledDivHeader = styled.div`
   margin: 0;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   width: 100%;
   text-align: center;
   h3 {
@@ -25,6 +18,7 @@ export const StyledDivHeader = styled.div`
     padding-bottom: 10px;
     font-weight: 700;
     font-size: 20px;
+    line-height: 21px;
     text-align: center;
   }
   p {
@@ -41,11 +35,27 @@ export const StyledDivForm = styled.div<DivColorsProps>`
     padding-bottom: 4px;
     font-size: 14px;
     font-weight: 500;
-    line-height: 21px;
-    color: ${({ labelColor }) => labelColor};
+    width: 100%;
+    text-align: left;
+    color: ${(props) =>
+      props.labelColor
+        ? props.theme.colors[props.labelColor]
+        : props.theme.colors.secondary3};
   }
   input {
+    width: 377px;
     margin-bottom: 18px;
+  }
+  button {
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+  a {
+    color: ${({ theme }) => theme.colors.secondary3};
+    font-size: 14px;
+  }
+  span {
+    font-weight: 600;
   }
 `;
 
@@ -65,6 +75,7 @@ export const StyledRemember = styled.div`
   label {
     margin: 0;
     padding: 0;
+    font-weight: 400;
   }
 `;
 
@@ -73,12 +84,12 @@ export const StyledSectionAdctionals = styled.section<DivColorsProps>`
   justify-content: space-between;
   width: 100%;
   a {
-    width: 100%;
+    width: 270px;
+    font-size: 14px;
+    color: ${({ theme }) => theme.colors.secondary3};
     outline: none;
-    text-decoration: none;
-  }
-  p {
-    border-bottom: 1px solid
-      ${({ underlineColor }) => (underlineColor ? underlineColor : "black")};
+    /* text-decoration: none; */
+    text-align: right;
+    font-weight: 500;
   }
 `;
