@@ -17,5 +17,6 @@ export const SpanInit = styled.span<StylesTextComponent>`
   font-size: ${(props) => (props.fontSize ? props.fontSize : 14)}px;
   line-height: ${(props) => (props.lineHeight ? props.lineHeight : 21)}px;
   text-align: ${(props) => (props.textAlign ? props.textAlign : "left")};
-  width: 100%;
+  padding: 0;
+  margin: 0;
 `;
