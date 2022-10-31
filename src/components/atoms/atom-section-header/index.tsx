@@ -8,13 +8,11 @@ export default function AtomSectionHeader(props: {
 }) {
   return (
     <>
-      <ParticleLogo />
+      <ParticleLogo width="122" />
       <ParticleText tagType="h3" colorText="secondary3">
         {props.texto}
       </ParticleText>
-      <ParticleText tagType="p" colorText="secondary3">
-        {props.texto}
-      </ParticleText>
+      <ParticleText tagType="p">{props.texto}</ParticleText>
     </>
   );
 }

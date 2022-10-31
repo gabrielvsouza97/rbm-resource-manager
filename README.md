@@ -1,22 +1,20 @@
 //Levantamento de Requisitos principais
 
-Para o projeto precisaremos de:
+## A fazer
 
-## Designado
+### Componente de Input:
 
-Labels -> Eduardo,<br/>
-Inputs: email, password -> Alessandra ,<br/>
-Botoes -> Davi,<br/>
-links -> Victor ,<br/>
-P, h's -> Gabriel ,<br/>
-logo -> Bruno,<br/>
+- Adicionar o tipo de email;
+- Adicionar o tipo required para verificar se o campo é obrigatório;
+- Tamanho do campo para as partes do código de verificação;
+- Fazer uma verificação de quando o campo estiver errado, mudar a cor da borda para vermelho;
+- Pegar as cores do Input pelo tema.
+  <br/><br/>
 
-## To-do
+### Componente de Botão:
 
-checkbox (salvar senha, se possivel colocar direto no arquivo login) ,<br/>
-toasts<br/>
-div<br/>
-
-//Bruno
-
-1. Pagina de Login
+- Trocar a propriedade Text para o Elemento Children do React;
+- Adicionar a cor do Fundo de acordo com o tema. Passar isso como propriedade no componente;
+- Passar como propriedade o tamanho do botão e definir um valor padrão (Sugestão: 100%);
+- Definir um cursor de pointer para o botão.
+- Adicionar um text transform para ele sempre ficar em uppercase (Apenas CSS).

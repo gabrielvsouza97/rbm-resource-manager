@@ -1,6 +1,6 @@
 import AtomSectionHeader from "components/atoms/atom-section-header";
 import ParticleText from "components/particles/particle-text";
-import Input from "components/particles/particule-input";
+import Input from "components/particles/particle-input";
 import useTheme from "hooks/useTheme";
 import * as Styled from "./molecules-login-style";
 import { NavLink } from "react-router-dom";
