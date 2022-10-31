@@ -41,7 +41,7 @@ export default function ParticleToast(props: ToastType){
         <ToastWrapper variant={props.variant}>
             <TextIconWrapper>
             <Icon src={icons[props.variant]}/>
-            <Text>{props.text}</Text>
+            <Text variant={props.variant}>{props.text}</Text>
         </TextIconWrapper>
             <CloseButton src={buttons[props.variant]}/>
         </ToastWrapper>        
