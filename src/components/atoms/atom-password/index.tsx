@@ -2,41 +2,46 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import ParticleText from "components/particles/particle-text";
 import * as Styled from "./atom-password-style";
-import { useEffect, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import ParticleInput from "components/particles/particle-input";
 
-export default function AtomPassword(props: { children: React.ReactNode }) {
-  const [eyeType, setEyeType] = useState<IconProp>(faEyeSlash);
-  const [passwordType, setPasswordType] = useState<"password" | "text">(
-    "password"
-  );
+const ICONS = [faEyeSlash, faEye];
+const PASSWORDFIELD = ["password", "text"] as ["password", "text"];
 
-  function changeEyeType() {
-    if (eyeType === faEyeSlash) {
-      setEyeType(faEye);
-      return;
-    }
-    setEyeType(faEyeSlash);
-    return;
+function returnNumber(Bool: boolean): number {
+  if (!Bool) {
+    return 0;
   }
+  return 1;
+}
 
-  useEffect(() => {
-    if (eyeType === faEye) {
-      setPasswordType("text");
-      return;
-    }
-    setPasswordType("password");
-    return;
-  }, [eyeType]);
+type AtomPasswordProps = {
+  children: React.ReactNode;
+  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+  value: string;
+};
+
+export default function AtomPassword(props: AtomPasswordProps) {
+  const [eyeType, setEyeType] = useState<boolean>(false);
+
   return (
     <>
-      <ParticleText tagType="label" for="password">
+      <ParticleText tagType="label" htmlFor="password">
         {props.children}
       </ParticleText>
       <Styled.StyledContainerPassword>
-        <FontAwesomeIcon icon={eyeType} onClick={changeEyeType} />
-        <ParticleInput type={passwordType} id="password" />
+        <FontAwesomeIcon
+          icon={ICONS[returnNumber(eyeType)]}
+          onClick={() => setEyeType(!eyeType)}
+        />
+        <ParticleInput
+          type={PASSWORDFIELD[returnNumber(eyeType)]}
+          id="password"
+          placeholder="Digite a sua Senha"
+          onChange={props.onChange}
+          value={props.value}
+        />
       </Styled.StyledContainerPassword>
     </>
   );

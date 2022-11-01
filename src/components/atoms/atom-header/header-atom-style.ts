@@ -4,7 +4,7 @@ export const StyledHeader = styled.header`
   display: fixed;
   position: relative;
   top: 0;
-  width: 100vw;
+  width: 100%;
   height: 76px;
   background-color: ${({ theme }) => theme.colors.secondary4};
 `;
