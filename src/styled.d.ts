@@ -1,4 +1,4 @@
-import { THEME } from "constants";
+import { THEME } from "./constants";
 import "styled-components";
 
 declare module "styled-components" {

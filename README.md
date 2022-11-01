@@ -13,4 +13,4 @@
 
 ### Componente de Botão:
 
--[] Passar como propriedade o tamanho do botão e definir um valor padrão (Sugestão: 100%);
+- Passar como propriedade o tamanho do botão e definir um valor padrão (Sugestão: 100%);
