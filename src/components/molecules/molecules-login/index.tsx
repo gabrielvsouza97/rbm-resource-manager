@@ -53,7 +53,7 @@ export default function MoleculeLogin() {
             <NavLink to="/alessandra">Esqueci minha senha</NavLink>
           </Styled.StyledRemember>
         </Styled.StyledSectionAdctionals>
-        <ParticleButton text="Entrar"></ParticleButton>
+        <ParticleButton>ENTRAR</ParticleButton>
         <NavLink to="/criarconta">
           Primeiro Acesso?{" "}
           <ParticleText tagType="span">Ative sua conta.</ParticleText>
