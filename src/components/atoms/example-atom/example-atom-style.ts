@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export const StyledDiv = styled.div`
-  background-color: red;
+export const StyledDiv = styled.div.attrs((props) => ({}))<{ backgroundColor: string }>`
+  background-color: ${(props) => props.backgroundColor};
   color: #e1e1e1;
   border: 1px solid red;
   height: 400px;

@@ -1,19 +1,14 @@
-import { LocalStorageNamespaces } from "types/local-storage";
+import { LoginResponse } from "types/auth";
 
 export default function localStorageHandler() {
-  function getData(namespace: LocalStorageNamespaces, key: string) {
+  function getJwt() {
     try {
-      const localStorageParsed = JSON.parse(localStorage.getItem(namespace) ?? "{}")[key];
-      return localStorageParsed;
+      const parsedLocalStorage = JSON.parse(localStorage.getItem("auth") ?? "") as LoginResponse;
+      return parsedLocalStorage.retorno.jwt;
     } catch {
-      return {};
+      return undefined;
     }
   }
 
-  function setData(namespace: LocalStorageNamespaces, key: string, value: any) {
-    const newLocalStorage = { ...getData(namespace, key), [key]: value };
-    localStorage.setItem(namespace, newLocalStorage);
-  }
-
-  return { getData, setData };
+  return { getJwt };
 }

@@ -10,16 +10,12 @@ export default function ExampleAtom() {
   });
   const { login } = useAuth();
 
-  function handleLogin() {
-    if (form.login === "daniel" && form.password === "123") {
-      login();
-      return;
-    }
-    alert("incorret password");
+  async function handleLogin() {
+    login(form.login, form.password);
   }
 
   return (
-    <Styled.StyledDiv>
+    <Styled.StyledDiv backgroundColor="#313131">
       <input placeholder="login" value={form.login} onChange={(e) => setForm((prev) => ({ ...prev, login: e.target.value }))} />
       <input placeholder="password" onChange={(e) => setForm((prev) => ({ ...prev, password: e.target.value }))} />
       <button onClick={handleLogin}>Login</button>
