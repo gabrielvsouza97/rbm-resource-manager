@@ -3,7 +3,7 @@ import { SpanInit } from "./particle-text-style";
 export type PropsText = {
   tagType: "h1" | "h2" | "h3" | "p" | "span" | "li" | "label";
   idName?: string;
-  for?: string;
+  htmlFor?: string;
   children?: React.ReactNode;
   fontWeight?: string;
   textAlign?: string;
