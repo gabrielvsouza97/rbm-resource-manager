@@ -1,13 +1,11 @@
-import { Navigate, Outlet } from "react-router";
+import { Navigate, Outlet, useLocation, useNavigate, useRoutes } from "react-router";
 
 import { useAuth } from "contexts/auth-context";
+import { useEffect } from "react";
 
 export default function ProtectedRoute() {
   const { loggedIn } = useAuth();
-
-  if (!loggedIn) {
-    return <Navigate to={"/"} />;
-  }
+  const location = useLocation();
 
   return <Outlet />;
 }

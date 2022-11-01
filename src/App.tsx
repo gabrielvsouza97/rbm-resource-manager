@@ -17,9 +17,7 @@ function App() {
       <AuthContextProvider>
         <Routes>
           <Route path="/" element={<ExamplePage />} />
-          <Route element={<ProtectedRoute />}>
-            <Route index path="/dashboard" element={<ExamplePage2 />} />
-          </Route>
+          <Route path="/dashboard" element={<ExamplePage2 />} />
         </Routes>
       </AuthContextProvider>
     </ThemeContext>
