@@ -10,7 +10,6 @@ type ItemsButtonProps = {
 };
 
 export default function ButtonLogin(props: ItemsButtonProps) {
-
     const navigate = useNavigate();
 
     async function Logando(
