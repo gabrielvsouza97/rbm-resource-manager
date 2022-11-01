@@ -40,7 +40,6 @@ export default function ButtonLogin(props: ItemsButtonProps) {
         } else {
         }
     }
-
     return (
         <Styled.ButtonStyled
             onClick={() => Logando('admin1','R@12b23m34!')}
