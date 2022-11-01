@@ -7,9 +7,8 @@ export default function MoleculeMain(props: any) {
     <>
       <HeaderAtom />
       <Styled.StyledMain>
-        <Styled.StyledSection>Teste</Styled.StyledSection>
-        <Styled.StyledSection>
-          <MoleculeLogin></MoleculeLogin>
+        <Styled.StyledSection backgroundColor={true}>
+          {<MoleculeLogin />}
         </Styled.StyledSection>
       </Styled.StyledMain>
     </>

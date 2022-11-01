@@ -1,19 +1,23 @@
 import styled from "styled-components";
+type SectionProps = {
+  backgroundColor?: boolean;
+};
 
 export const StyledMain = styled.main`
   display: flex;
-  width: 100vw;
+  position: absolute;
+  width: 100%;
   top: 77px;
   height: 948px;
   padding: 0;
   background-color: #e1eef3;
-  overflow: auto;
 `;
 
-export const StyledSection = styled.section`
+export const StyledSection = styled.section<SectionProps>`
   width: 411px;
   height: 577px;
   padding: 42px 32px;
   margin-top: 105px;
-  background-color: ${({ theme }) => theme.colors.secondary4};
+  background-color: ${(props) =>
+    props.backgroundColor ? props.theme.colors.secondary4 : "transparent"};
 `;
