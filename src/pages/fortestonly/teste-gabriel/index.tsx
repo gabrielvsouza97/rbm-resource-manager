@@ -5,8 +5,7 @@ import MoleculeMain from "components/molecules/molecules-main";
 export default function TesteGabriel() {
   return (
     <>
-      <MoleculeMain />
-      {/* <MoleculeLogin /> */}
+      <MoleculeMain>.</MoleculeMain>
     </>
   );
 }

@@ -3,7 +3,7 @@ import { ChangeEvent } from "react";
 import * as Styled from "./particule-input-style";
 
 type StylesInputComponents = {
-  type: "text" | "password" | "checkbox";
+  type: "text" | "password" | "checkbox" | "email";
   placeholder?: string;
   id: string;
   onChange?: (event: ChangeEvent<HTMLInputElement>) => void;

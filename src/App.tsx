@@ -23,13 +23,13 @@ function App() {
       <AuthContextProvider>
         <Routes>
           <Route path="/" element={<TesteAlessandra />} />
-          <Route path="/dashboard1" element={<ExamplePage/>}/>
+          <Route path="/dashboard1" element={<ExamplePage />} />
           <Route path="/dashboard2" element={<ExamplePage2 />} />
-          <Route path="/gabriel" element={<TesteGabriel/>}/>
-          <Route path="/bruno" element={<TesteBruno/>}/>
-          <Route path="/davi" element={<TesteDavi/>}/>
-          <Route path="/eduardo" element={<TesteEduardo/>}/>
-          <Route path="/victor" element={<TesteVictor/>}/>
+          <Route path="/activateaccount" element={<TesteGabriel />} />
+          <Route path="/bruno" element={<TesteBruno />} />
+          <Route path="/davi" element={<TesteDavi />} />
+          <Route path="/eduardo" element={<TesteEduardo />} />
+          <Route path="/victor" element={<TesteVictor />} />
         </Routes>
       </AuthContextProvider>
     </ThemeContext>

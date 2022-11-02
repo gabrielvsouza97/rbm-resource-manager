@@ -20,12 +20,10 @@ export default function MoleculeLogin() {
   }
   return (
     <>
-      <Styled.StyledDivHeader>
-        <AtomSectionHeader
-          texto="Entrar na minha Conta"
-          subtexto="Acesse sua conta abaixo =)"
-        />
-      </Styled.StyledDivHeader>
+      <AtomSectionHeader
+        texto="Entrar na minha Conta"
+        subtexto="Acesse sua conta abaixo =)"
+      />
       <Styled.StyledDivForm labelColor={"secondary3"}>
         <ParticleText
           tagType="label"
@@ -38,10 +36,16 @@ export default function MoleculeLogin() {
           type="text"
           placeholder="email@rbmweb.com.br"
           id="login-form-email"
-          value={form.login} onChange={(e) => setForm((prev) => ({ ...prev, login: e.target.value }))}
+          value={form.login}
+          onChange={(e) =>
+            setForm((prev) => ({ ...prev, login: e.target.value }))
+          }
         />
         <AtomPassword
-         value={form.password} onChange={(e) => setForm((prev) => ({ ...prev, password: e.target.value }))}
+          value={form.password}
+          onChange={(e) =>
+            setForm((prev) => ({ ...prev, password: e.target.value }))
+          }
         >
           Senha
         </AtomPassword>
