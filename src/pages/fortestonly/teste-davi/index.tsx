@@ -1,9 +1,9 @@
-import ButtonLogin from "components/particles/particle-button-login";
+import ParticleButton from "components/particles/particle-button";
 import ParticleText from "components/particles/particle-text";
 export default function TesteDavi() {
   return (
     <>
-      <ButtonLogin>ENTRAR</ButtonLogin>
+      {/* <ParticleButton>ENTRAR</ParticleButton> */}
     </>
   );
 }

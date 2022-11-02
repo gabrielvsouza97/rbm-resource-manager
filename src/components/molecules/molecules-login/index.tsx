@@ -1,16 +1,23 @@
 import AtomPassword from "components/atoms/atom-password";
 import AtomSectionHeader from "components/atoms/atom-section-header";
-import ParticleButton from "components/particles/particle-button-login";
+import ParticleButton from "components/particles/particle-button";
 import ParticleInput from "components/particles/particle-input";
 import ParticleText from "components/particles/particle-text";
 import { ChangeEvent, useState } from "react";
 import { NavLink } from "react-router-dom";
 import * as Styled from "./molecule-login-style";
+import { useAuth } from "contexts/auth-context";
 
 export default function MoleculeLogin() {
-  const [valueEmail, setValueEmail] = useState("");
-  const [valuePassword, setValuePassword] = useState("");
+  const [form, setForm] = useState({
+    login: "",
+    password: "",
+  });
+  const { login } = useAuth();
 
+  async function handleLogin() {
+    login(form.login, form.password);
+  }
   return (
     <>
       <Styled.StyledDivHeader>
@@ -31,16 +38,10 @@ export default function MoleculeLogin() {
           type="text"
           placeholder="email@rbmweb.com.br"
           id="login-form-email"
-          onChange={(event: ChangeEvent<HTMLInputElement>) =>
-            setValueEmail(event.target.value)
-          }
-          value={valueEmail}
+          value={form.login} onChange={(e) => setForm((prev) => ({ ...prev, login: e.target.value }))}
         />
         <AtomPassword
-          onChange={(event: ChangeEvent<HTMLInputElement>) =>
-            setValuePassword(event.target.value)
-          }
-          value={valuePassword}
+         value={form.password} onChange={(e) => setForm((prev) => ({ ...prev, password: e.target.value }))}
         >
           Senha
         </AtomPassword>
@@ -53,7 +54,7 @@ export default function MoleculeLogin() {
             <NavLink to="/alessandra">Esqueci minha senha</NavLink>
           </Styled.StyledRemember>
         </Styled.StyledSectionAdctionals>
-        <ParticleButton>ENTRAR</ParticleButton>
+        <ParticleButton onClick={handleLogin}>ENTRAR</ParticleButton>
         <NavLink to="/criarconta">
           Primeiro Acesso?{" "}
           <ParticleText tagType="span">Ative sua conta.</ParticleText>

@@ -56,7 +56,7 @@ export default function AuthContextProvider({ children }: AuthContextProps) {
 
   useEffect(() => {
     if (loggedIn && location.pathname === "/") {
-      navigate("/dashboard");
+      navigate("/dashboard2");
     } else if (!loggedIn && location.pathname !== "/") {
       navigate("/");
     }

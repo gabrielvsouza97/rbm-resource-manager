@@ -17,7 +17,24 @@ export const StyledSection = styled.section<SectionProps>`
   width: 411px;
   height: 577px;
   padding: 42px 32px;
-  margin-top: 105px;
+  margin: 5%;
   background-color: ${(props) =>
     props.backgroundColor ? props.theme.colors.secondary4 : "transparent"};
+`;
+
+export const StyledDivSection = styled.div`
+  height:700px;
+  width: 800px;
+  margin: 5%;
+  text-align: start;
+  display: grid;
+  align-items: flex-start;
+`;
+
+export const DivAlinharLi = styled.div` 
+  display: flex;
+  li{
+   list-style-position : center;
+   padding-right: 15px;
+  }
 `;
