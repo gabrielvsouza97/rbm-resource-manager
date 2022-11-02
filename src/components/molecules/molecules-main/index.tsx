@@ -152,7 +152,8 @@ export default function MoleculeMain(props: { children: React.ReactNode }) {
           </ParticleText>
         </Styled.StyledDivSection>
         <Styled.StyledSection backgroundColor={true}>
-          <MoleculeLogin />
+          {/* <MoleculeLogin /> */}
+          {props.children}
         </Styled.StyledSection>
       </Styled.StyledMain>
     </>
