@@ -8,6 +8,7 @@ export const THEME = {
       secondary2: "#909194",
       secondary3: "#262424",
       secondary4: "#FFFFFF",
+      backgroundPrimary: "#e1eef3"
     },
   },
   dark: {
@@ -19,6 +20,8 @@ export const THEME = {
       secondary2: "#909194",
       secondary3: "#262424",
       secondary4: "#FFFFFF",
+      backgroundPrimary: "#e1eef3"
+
     },
   },
 };
