@@ -5,12 +5,13 @@ type SectionProps = {
 
 export const StyledMain = styled.main`
   display: flex;
-  position: absolute;
-  width: 100%;
+  width: 1440px;
   top: 77px;
   height: 948px;
   padding: 0;
   background-color: #e1eef3;
+  justify-content: center;
+  margin:auto;
 `;
 
 export const StyledSection = styled.section<SectionProps>`
