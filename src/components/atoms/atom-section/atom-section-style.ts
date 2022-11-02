@@ -1,18 +1,14 @@
 import styled from "styled-components";
 
-export const StyledSection = styled.section`
-  height: calc(100vh - 30px);
-  width: 45vw;
-  margin: 30px;
-`;
-
 export const StyledDiv = styled.div`
-  background-color: aliceblue;
-  height:90%;
+  height: 100%;
   width: 100%;
-  padding: 15px;
-  text-align: start;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
 `;
 
+export const StyledUlInLine = styled.ul`
+  display: inline;
+  list-style: none;
+`;
