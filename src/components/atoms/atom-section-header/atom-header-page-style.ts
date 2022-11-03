@@ -17,7 +17,9 @@ export const StyledDivHeader = styled.div`
     text-align: center;
   }
   p {
+    font-weight: 400;
     padding-bottom: 32px;
     text-align: center;
+    color: ${({ theme }) => theme.colors.secondary3};
   }
 `;
