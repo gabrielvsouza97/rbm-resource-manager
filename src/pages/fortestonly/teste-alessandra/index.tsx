@@ -7,7 +7,11 @@ import MoleculeActivateStep1 from "components/molecules/molecules-activate-step1
 import MoleculeActivateStep2 from "components/molecules/molecules-activate-step2";
 import MoleculeActivateStep4 from "components/molecules/molecules-actovate-step4";
 
-const Utils = [<MoleculeActivateStep1 />, <MoleculeActivateStep2 /> , <MoleculeActivateStep4/> ];
+const Utils = [
+  <MoleculeActivateStep1 />,
+  <MoleculeActivateStep2 />,
+  <MoleculeActivateStep4 />,
+];
 
 export default function TesteAlessandra() {
   return (
@@ -17,7 +21,7 @@ export default function TesteAlessandra() {
       <Input  type="checkbox"></Input> */}
       <Main>
         {/* <MoleculeLogin /> */}
-        {Utils[2]}
+        {Utils[0]}
       </Main>
     </>
   );
