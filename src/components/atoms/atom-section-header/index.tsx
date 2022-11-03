@@ -12,7 +12,7 @@ export default function AtomSectionHeader(props: {
       <ParticleText tagType="h3" colorText="secondary3">
         {props.texto}
       </ParticleText>
-      <ParticleText tagType="p">{props.texto}</ParticleText>
+      <ParticleText tagType="p">{props.subtexto}</ParticleText>
     </Styled.StyledDivHeader>
   );
 }
