@@ -39,6 +39,7 @@ export default function MoleculeMain(props: { children: React.ReactNode }) {
                 fontWeight="500"
                 fontSize="18"
                 colorText="primary2"
+                liststyled= "none"
               >
                 Lorem
               </ParticleText>

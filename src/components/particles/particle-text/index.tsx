@@ -11,6 +11,7 @@ export type PropsText = {
   lineHeight?: string;
   fontSize?: string;
   padding?: string;
+  liststyled ?: string;
 };
 
 export default function ParticleText(props: PropsText) {

@@ -3,11 +3,12 @@ import * as Styled from "./particle-button-style";
 type ButtonProps = {
     onClick?: ()=> void;
     children?: React.ReactNode;
+    tamanho?: string;
 };
 
 export default function ParticleButton (props: ButtonProps){
     return(
-        <Styled.StyledButton {...props}>{props.children}</Styled.StyledButton>
+        <Styled.ButtonStyled {...props}>{props.children}</Styled.ButtonStyled>
     );
 
 }

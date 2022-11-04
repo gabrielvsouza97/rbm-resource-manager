@@ -6,6 +6,7 @@ type StylesTextComponent = {
   fontSize?: string;
   lineHeight?: string;
   textAlign?: string;
+  liststyled?: string;
 };
 
 export const SpanInit = styled.span<StylesTextComponent>`
@@ -19,4 +20,6 @@ export const SpanInit = styled.span<StylesTextComponent>`
   text-align: ${(props) => (props.textAlign ? props.textAlign : "left")};
   padding: 0;
   margin: 0;
+  list-style: ${(props) => (props.liststyled ? props.liststyled : "")};
+
 `;
